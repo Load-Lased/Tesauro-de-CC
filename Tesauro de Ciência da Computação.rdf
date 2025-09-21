@@ -503,6 +503,35 @@
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquitetura_de_Danco_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquitetura_de_Danco_de_Dados">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#bancoDados"/>
+        <skos:altLabel xml:lang="en">Database Architecture</skos:altLabel>
+        <skos:definition xml:lang="en">A data architecture describes how data is managed, from collection to transformation, distribution, and consumption. It defines the plan for the data and the way it will flow through data storage systems</skos:definition>
+        <skos:definition xml:lang="pt">Uma arquitetura de dados descreve como os dados são gerenciados, desde a coleta até a transformação, a distribuição e o consumo . Ela define o plano para os dados e a maneira como eles irão fluir pelos sistemas de armazenamento de dados</skos:definition>
+        <skos:prefLabel xml:lang="pt">Arquitetura de Banco de Dados</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquiteturas_Distribuídas -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquiteturas_Distribuídas">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Distributed Architectures</skos:altLabel>
+        <skos:definition xml:lang="pt-br">As arquiteturas distribuídas definem como os componentes de um sistema distribuído são organizados e interagem.</skos:definition>
+        <skos:definition xml:lang="en">Distributed architectures define how the components of a distributed system are organized and interact.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Arquiteturas Distribuídas</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Avaliação_de_Sistemas_Interativos -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Avaliação_de_Sistemas_Interativos">
@@ -2512,6 +2541,20 @@ vi) Adapt quickly to technological changes and new work environments.</skos:defi
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Computação_Móvel_Ubíqua -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Computação_Móvel_Ubíqua">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Mobile and Ubiquitous Computing</skos:altLabel>
+        <skos:definition xml:lang="pt-br">A computação móvel e ubíqua refere-se à capacidade dos sistemas distribuídos de fornecer serviços de forma contínua e transparente, independentemente da localização ou do dispositivo do usuário,  a qualquer hora e em qualquer lugar.</skos:definition>
+        <skos:definition xml:lang="en">Mobile and ubiquitous computing refers to the ability of distributed systems to provide services continuously and transparently, regardless of the user&apos;s location or device, anytime, anywhere.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Computação Móvel Ubíqua</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Comunicabilidade -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Comunicabilidade">
@@ -2784,6 +2827,20 @@ Interface modeling encompasses various techniques such as wireframing, prototypi
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Modelos_de_Comunicação_entre_Processos -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Modelos_de_Comunicação_entre_Processos">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Inter-Process Communication</skos:altLabel>
+        <skos:definition xml:lang="pt-br">A comunicação entre processos, em inglês Inter-Process Communication (IPC), é o grupo de mecanismos que permite aos processos trocarem informação entre si.</skos:definition>
+        <skos:definition xml:lang="en">Inter-process communication (IPC) is the set of mechanisms that allows processes to exchange information with each other.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Modelos de Comunicação entre Processos</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#NoSQL -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#NoSQL">
@@ -2889,6 +2946,19 @@ Kernel: O núcleo ou kernel é a parte central do sistema operacional. Ele contr
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Princípios_de_Sistemas_Distribuídos -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Princípios_de_Sistemas_Distribuídos">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:altLabel xml:lang="en">Principles of Distributed Systems</skos:altLabel>
+        <skos:definition xml:lang="pt-br">Os princípios de sistemas distribuídos referem-se às características fundamentais que guiam o design e a implementação desses sistemas.</skos:definition>
+        <skos:definition>The principles of distributed systems refer to the fundamental characteristics that guide the design and implementation of these systems.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Princípios de Sistemas Distribuídos</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Process -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Process"/>
@@ -2960,6 +3030,20 @@ The reflection also involves examining the broader societal attitudes and assump
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Replicação_de_Dados -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Replicação_de_Dados">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Data Replication</skos:altLabel>
+        <skos:definition xml:lang="pt-br">A replicação de dados em sistemas distribuídos é o processo de criar e manter cópias de dados em vários nós para melhorar a disponibilidade, confiabilidade e desempenho do sistema.</skos:definition>
+        <skos:definition xml:lang="en">Data replication in distributed systems is the process of creating and maintaining copies of data across multiple nodes to improve the availability, reliability, and performance of the system.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Replicação de Dados</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#SGBD -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#SGBD">
@@ -2990,6 +3074,34 @@ The reflection also involves examining the broader societal attitudes and assump
     
 
 
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Segurança -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Segurança">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Security</skos:altLabel>
+        <skos:definition xml:lang="en">A set of measures and mechanisms used to protect data and resources in distributed systems against unauthorized access, attacks, unauthorized modifications, and interruptions. It includes authentication, encryption, access control, and data integrity.</skos:definition>
+        <skos:definition xml:lang="pt-br">Conjunto de medidas e mecanismos utilizados para proteger dados e recursos em sistemas distribuídos contra acesso não autorizado, ataques, modificações não autorizadas e interrupções. Engloba autenticação, criptografia, controle de acesso e integridade dos dados.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Segurança</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Serviços_de_Nomes -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Serviços_de_Nomes">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Naming Services</skos:altLabel>
+        <skos:definition xml:lang="en">Naming services in distributed systems allow resources (such as computers, services, and files) to be identified in a user-friendly and location-independent manner. Instead of using physical addresses (such as IPs), naming services associate logical names with resources.</skos:definition>
+        <skos:definition xml:lang="pt-br">Os serviços de nomes em sistemas distribuídos permitem que recursos (como computadores, serviços e arquivos) sejam identificados de forma amigável e independente da localização. Em vez de usar endereços físicos (como IPs), os serviços de nomes associam nomes lógicos a recursos.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Serviços de Nomes</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Sincronização -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Sincronização">
@@ -3001,6 +3113,34 @@ The reflection also involves examining the broader societal attitudes and assump
         <skos:definition xml:lang="en">A relationship between *processes such that one process cannot proceed beyond a particular point until another process has reached a particular point. For example, when one process is writing data in a buffer to be read by another process, the two processes must be synchronized so that the reading process does not attempt to read the buffer beyond the point at which the writing process has written data in the buffer  (Oxford Dictionary). </skos:definition>
         <skos:definition xml:lang="pt">Uma relação entre processos na qual um processo não pode avançar além de um ponto específico até que outro processo tenha atingido um ponto particular. Por exemplo, quando um processo está escrevendo dados em um buffer para serem lidos por outro processo, os dois processos devem estar sincronizados para que o processo de leitura não tente ler o buffer além do ponto em que o processo de escrita já escreveu dados no buffer  (Oxford Dictionary).</skos:definition>
         <skos:prefLabel xml:lang="pt">Sincronização</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_Operacionais_Distribuídos -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_Operacionais_Distribuídos">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Distributed Operating Systems</skos:altLabel>
+        <skos:definition xml:lang="en">Distributed operating systems are responsible for managing the resources of a set of interconnected computers, presenting them to users and applications as if they were a single cohesive system.</skos:definition>
+        <skos:definition xml:lang="pt-br">Os sistemas operacionais distribuídos são responsáveis por gerenciar os recursos de um conjunto de computadores interconectados, apresentando-os aos usuários e aplicativos como se fossem um único sistema coeso.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Sistemas Operacionais Distribuídos</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_de_Arquivos_Distribuídos -->
+
+    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_de_Arquivos_Distribuídos">
+        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:altLabel xml:lang="en">Distributed File Systems</skos:altLabel>
+        <skos:definition xml:lang="en">Distributed File Systems (DFS) allow the storage and access of files across multiple nodes of a distributed system, as if they were in a single location. They are designed to provide transparency, performance, and fault tolerance.A distributed file system allows programs to store and access remote files exactly as if they were local.</skos:definition>
+        <skos:definition xml:lang="pt-br">Os sistemas de arquivos distribuídos (Distributed File Systems - DFS) permitem o armazenamento e acesso a arquivos em múltiplos nós de um sistema distribuído, como se estivessem em um único local. Eles são projetados para oferecer transparência, desempenho e tolerância a falhas.Um sistema de arquivos distribuídos permite aos programas armazenarem e acessarem arquivos remotos exatamente como se fossem locais.</skos:definition>
+        <skos:prefLabel xml:lang="pt-br">Sistemas de Arquivos Distribuídos</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3112,21 +3252,6 @@ A investigação de propriedades matemáticas dos dados, como números, e de ope
     
 
 
-    <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#arquiteturaBancoDados -->
-
-    <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#arquiteturaBancoDados">
-        <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#CC"/>
-        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#bancoDados"/>
-        <skos:altLabel xml:lang="en">Database Architecture</skos:altLabel>
-        <skos:definition xml:lang="en">A data architecture describes how data is managed, from collection to transformation, distribution, and consumption. It defines the plan for the data and the way it will flow through data storage systems</skos:definition>
-        <skos:definition xml:lang="pt">Uma arquitetura de dados descreve como os dados são gerenciados, desde a coleta até a transformação, a distribuição e o consumo . Ela define o plano para os dados e a maneira como eles irão fluir pelos sistemas de armazenamento de dados</skos:definition>
-        <skos:prefLabel xml:lang="pt">Arquitetura de Banco de Dados</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://lodlased.unicentro.br/2017/DiretrizesSBC#arquiteturaComputadores -->
 
     <owl:NamedIndividual rdf:about="http://lodlased.unicentro.br/2017/DiretrizesSBC#arquiteturaComputadores">
@@ -3233,6 +3358,7 @@ A investigação de propriedades matemáticas dos dados, como números, e de ope
         <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:inScheme rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquitetura_de_Danco_de_Dados"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.2.1-Resolver_problemas_usando_ambientes_de_programacao"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.2.10-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.2.2-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
@@ -3253,7 +3379,6 @@ A investigação de propriedades matemáticas dos dados, como números, e de ope
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#SGBD"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#SQL"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Transação"/>
-        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#arquiteturaBancoDados"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#dataModel"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
         <skos:altLabel xml:lang="es">Banco de Datos</skos:altLabel>
@@ -4216,6 +4341,7 @@ A investigação de propriedades matemáticas dos dados, como números, e de ope
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.2.11-Aplicar_os_principios_de_interacao_humano_computador_para_avaliar_e_construir_uma_grande_variedade_de_produtos_incluindo_interface_do_usuario_paginas_web_sistemas_multimidia_e_sistemas_moveis"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.5.9-Especificar_projetar_implementar_manter_e_avaliar_sistemas_de_computacao_empregando_teorias_praticas_e_ferramentas_adequadas"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
         <skos:altLabel xml:lang="es">Internet de las cosas</skos:altLabel>
         <skos:altLabel xml:lang="en">Internet of Things</skos:altLabel>
         <skos:definition xml:lang="es">Es un concepto que se refiere a la interconexión digital de objetos cotidianos con Internet, conectando objetos más que personas. En otras palabras, Internet de las cosas no es más que una red de objetos físicos capaces de recopilar y transmitir datos. (Wikipedia)</skos:definition>
@@ -4944,6 +5070,7 @@ A Dictionary of Computer Science (Oxford Quick Reference)(p. 545). OUP Oxford. E
         <rdf:type rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:inScheme rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Arquiteturas_Distribuídas"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.2.3-Avaliar_criticamente_projetos_de_sistemas_de_computacao"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.4.1_Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_de_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.5.11-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
@@ -4951,6 +5078,16 @@ A Dictionary of Computer Science (Oxford Quick Reference)(p. 545). OUP Oxford. E
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.5.9-Especificar_projetar_implementar_manter_e_avaliar_sistemas_de_computacao_empregando_teorias_praticas_e_ferramentas_adequadas"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.7.3-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentesii"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Computação_Móvel_Ubíqua"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Modelos_de_Comunicação_entre_Processos"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Princípios_de_Sistemas_Distribuídos"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Replicação_de_Dados"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Segurança"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Serviços_de_Nomes"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_Operacionais_Distribuídos"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#Sistemas_de_Arquivos_Distribuídos"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#internetCoisas"/>
+        <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
         <skos:related rdf:resource="http://lodlased.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
         <skos:altLabel xml:lang="en">Distributed Systems</skos:altLabel>
