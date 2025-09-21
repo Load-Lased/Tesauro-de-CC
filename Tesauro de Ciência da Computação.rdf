@@ -11,10 +11,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:DiretrizesSBC="http://lod.unicentro.br/2017/DiretrizesSBC/">
     <owl:Ontology rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC">
+        <sbc:OWLAnnotationProperty_06e240b0_f7cb_404d_b9eb_2661702c410a>João Vitor Pieczarka da Silva</sbc:OWLAnnotationProperty_06e240b0_f7cb_404d_b9eb_2661702c410a>
         <dct:creator>João Pedro Keinar</dct:creator>
         <dct:creator>Sandro Rautenberg</dct:creator>
-        <dct:description xml:lang="pt">Apresenta-se uma proposta de Tesauro para os cursos de Bacharelado em Ciência da Computação. Como uma forma de representação de conhecimento, relaciona os conceitos e definições dos cursos de Ciência da Computação estabelecidas nos Referenciais de Formação para os Cursos de Graduação em Computação - ano 2017. São relacionados os eixos de aprendizagem, suas competências e seus conteúdos didáticos, representados pelo Simple Knowledge Organization Systems.</dct:description>
-        <dct:title xml:lang="pt">Tesauro das Diretrizes da Sociedade Brasileira de Computação para Cursos Bacharelado em Ciência da Computação - 2017</dct:title>
+        <dct:description xml:lang="pt">Apresenta-se uma proposta de Tesauro para os cursos de Bacharelado em Ciência da Computação. Como uma forma de representação de conhecimento, relaciona os conceitos e definições dos cursos de Ciência da Computação estabelecidas nos Referenciais de Formação para os Cursos de Graduação em Computação - ano 2023. São relacionados os eixos de aprendizagem, suas competências e seus conteúdos didáticos, representados pelo Simple Knowledge Organization Systems.</dct:description>
+        <dct:title xml:lang="pt">Tesauro das Diretrizes da Sociedade Brasileira de Computação para Cursos Bacharelado em Ciência da Computação - 2023</dct:title>
     </owl:Ontology>
     
 
@@ -27,6 +28,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLAnnotationProperty_06e240b0_f7cb_404d_b9eb_2661702c410a -->
+
+    <owl:AnnotationProperty rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLAnnotationProperty_06e240b0_f7cb_404d_b9eb_2661702c410a">
+        <rdfs:label xml:lang="pt">contributor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -58,16 +68,13 @@
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
@@ -108,7 +115,6 @@
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:AnnotationProperty>
     
 
@@ -339,13 +345,17 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -357,7 +367,9 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -2615,6 +2627,276 @@ vi) Adapt quickly to technological changes and new work environments.</skos:defi
     
 
 
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#Gerenciamento_de_Memória -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#Gerenciamento_de_Memória">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:hasTopConcept rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.5-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.4-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.6-Compreender_os_fatos_essenciais_os_conceitos_os_principios_e_as_teorias_relacionadas_a_ciencia_da_computacao_para_o_desenvolvimento_de_software_e_hardware_e_suas_aplicacoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.1-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.11_Escolher_e_aplicar_boas_praticas_e_tecnicas_que_conduzem_ao_raciocinio_rigoroso_no_planejamento_na_execucao_e_no_acompanhamento_na_meiacao_e_gerenciamento_geral_da_qualidade_de_sistemas_computacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.11-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.1-Gerir_a_sua_propria_aprendizagem_e_desenvolvimento_incluindo_a_gestao_de_tempo_e_competencias_organizacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.6-Identificar_e_analisar_requisitos_e_especificacoes_para_problemas_especificos_e_planejar_estrategias_para_suas_solucoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:altLabel xml:lang="en">Memory Management</skos:altLabel>
+        <skos:definition xml:lang="en">Memory Management in operating systems is the function responsible for allocating and releasing space in RAM for running processes. It ensures that each program has access to the necessary amount of memory to function correctly, preventing conflicts between processes and optimizing the use of available resources. Additionally, memory management is responsible for mapping virtual addresses used by programs to the physical addresses of RAM, allowing processes to run in an isolated and protected manner from each other (ChatGPT).</skos:definition>
+        <skos:definition xml:lang="pt">O Gerenciamento de Memória em sistemas operacionais é a função responsável por alocar e liberar espaço na memória RAM para os processos em execução. Ele garante que cada programa tenha acesso à quantidade necessária de memória para funcionar corretamente, evitando conflitos entre processos e otimizando o uso dos recursos disponíveis. Além disso, o gerenciamento de memória é responsável por mapear endereços virtuais usados pelos programas para os endereços físicos da memória RAM, permitindo que os processos sejam executados de forma isolada e protegida uns dos outros (ChatGPT).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Gerenciamento de Memória</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_16d36ebd_502b_4484_b455_50301760bd95 -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_16d36ebd_502b_4484_b455_50301760bd95">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.5-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.10-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.4-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.6-Compreender_os_fatos_essenciais_os_conceitos_os_principios_e_as_teorias_relacionadas_a_ciencia_da_computacao_para_o_desenvolvimento_de_software_e_hardware_e_suas_aplicacoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.1-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.11_Escolher_e_aplicar_boas_praticas_e_tecnicas_que_conduzem_ao_raciocinio_rigoroso_no_planejamento_na_execucao_e_no_acompanhamento_na_meiacao_e_gerenciamento_geral_da_qualidade_de_sistemas_computacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.4-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.7-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.4-Avaliar_criticamente_projetos_de_sistemas_de_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.5-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.11-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.5-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.4-Ler_textos_tecnicos_na_lingua_inglesa"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.6-Identificar_e_analisar_requisitos_e_especificacoes_para_problemas_especificos_e_planejar_estrategias_para_suas_solucoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sitemasDistribuidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema%20"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <rdfs:label xml:lang="pt">Conceitos Básicos</rdfs:label>
+        <skos:altLabel xml:lang="en">Basic Concepts</skos:altLabel>
+        <skos:definition xml:lang="en">An Operating System is a set of programs and services that efficiently manage the hardware resources of a computer and provide an interface for users and applications to interact with the system. Basic Functions of an OS: Resource Management; User Interface; Program Execution; File Management; Security; Communication; Error Management. Kernel: The kernel is the central part of the operating system. It controls the hardware and performs essential operations such as process scheduling and memory management. (ChatGPT)</skos:definition>
+        <skos:definition xml:lang="pt">Um Sistema Operacional é um conjunto de programas e serviços que gerenciam eficientemente os recursos de hardware de um computador e fornecem uma interface para que os usuários e aplicativos interajam com o sistema. Funções Básicas de um SO: Gerenciamento de Recurso; Interface de Usuário;  Execução de Programas;  Gerenciamento de Arquivos; : Segurança Comunicação Gerenciamento de Erros.
+Kernel: O núcleo ou kernel é a parte central do sistema operacional. Ele controla o hardware e executa operações essenciais, como escalonamento de processos e gerenciamento de memória. (ChatGPT)</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_79c0fba5_4617_4b36_9292_12d53c5ddd3d -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_79c0fba5_4617_4b36_9292_12d53c5ddd3d">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.5-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.6-Compreender_os_fatos_essenciais_os_conceitos_os_principios_e_as_teorias_relacionadas_a_ciencia_da_computacao_para_o_desenvolvimento_de_software_e_hardware_e_suas_aplicacoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.11_Escolher_e_aplicar_boas_praticas_e_tecnicas_que_conduzem_ao_raciocinio_rigoroso_no_planejamento_na_execucao_e_no_acompanhamento_na_meiacao_e_gerenciamento_geral_da_qualidade_de_sistemas_computacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.7-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.1_Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_de_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.3-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentesii"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:altLabel xml:lang="en">Processor Management</skos:altLabel>
+        <skos:definition xml:lang="pt">A Gerência do Processador em sistemas operacionais refere-se ao controle e escalonamento dos processos em execução para otimizar o uso do processador. O sistema operacional decide quais processos devem ser executados e por quanto tempo, com base em políticas de escalonamento. Ele permite que múltiplos processos compartilhem a CPU de forma justa e eficiente, garantindo a resposta rápida aos eventos e a utilização adequada dos recursos do sistema (ChatGPT).</skos:definition>
+        <skos:definition xml:lang="en">Processor Management in operating systems refers to the control and scheduling of running processes to optimize processor usage. The operating system determines which processes should run and for how long, based on scheduling policies. It enables multiple processes to share the CPU fairly and efficiently, ensuring quick response to events and proper utilization of system resources.</skos:definition>
+        <skos:prefLabel xml:lang="pt">Gerência do Processador</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_9434786f_95c3_4def_90fb_a1b2e516d65d -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_9434786f_95c3_4def_90fb_a1b2e516d65d">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.2-Conhecer_limites_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.3-Resolver_problemas_usando_ambientes_de_programacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.5-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.1-Resolver_problemas_usando_ambientes_de_programacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.1_Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_de_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.3-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentesii"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.2-Preparar_e_apresentar_seus_trabalhos_e_problemas_tecnicos_e_suas_solucoes_para_audiencias_diversas_em_formatos_apropriados_(oral_e_escrito)"/>
+        <skos:altLabel>Input and Output (I/O) Management.</skos:altLabel>
+        <skos:definition xml:lang="en">Input and Output (I/O) Management in operating systems is responsible for controlling the communication between input and output devices (e.g., keyboard, mouse, printer) and the running processes. It coordinates efficient access to these devices, ensuring that data is transferred reliably and synchronized between peripherals and main memory without overloading the processor (ChatGPT).</skos:definition>
+        <skos:definition xml:lang="pt">O Gerenciamento de Entrada e Saída (E/S) em sistemas operacionais é responsável por controlar a comunicação entre os dispositivos de entrada e saída (por exemplo, teclado, mouse, impressora) e os processos em execução. Ele coordena o acesso eficiente aos dispositivos, garantindo que os dados sejam transferidos de forma confiável e sincronizada entre os periféricos e a memória principal, sem sobrecarregar o processador (ChatGPT).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Gerenciamento de Entrada e Saída</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_c962f01c_7c3c_40bf_aeee_f68c9a659f50 -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_c962f01c_7c3c_40bf_aeee_f68c9a659f50">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.2-Conhecer_limites_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.3-Resolver_problemas_usando_ambientes_de_programacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.1-Resolver_problemas_usando_ambientes_de_programacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.3-Avaliar_criticamente_projetos_de_sistemas_de_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.8-Identificar_e_analisar_requisitos_e_especificacoes_para_problemas_especificos_e_planejar_estrategias_para_suas_solucoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:altLabel xml:lang="en">file system</skos:altLabel>
+        <skos:definition xml:lang="en">In operating systems, file systems are organized structures that manage the storage, access, and manipulation of data on storage devices such as hard disks and SSDs. They provide an interface for creating, reading, writing, renaming, and deleting files, as well as for organizing the directory hierarchy that contains these files (ChatGPT).</skos:definition>
+        <skos:definition xml:lang="pt">Sistemas de arquivos em sistemas operacionais são estruturas organizadas que gerenciam o armazenamento, acesso e manipulação de dados em dispositivos de armazenamento, como discos rígidos e SSDs. Eles fornecem uma interface para criar, ler, escrever, renomear e excluir arquivos, bem como para organizar a hierarquia de diretórios que contêm esses arquivos (ChatGPT).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Sistemas de Arquivo</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_f7b8393d_47b1_4c7b_ba79_f761a387155a -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_f7b8393d_47b1_4c7b_ba79_f761a387155a">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.10-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.6-Compreender_os_fatos_essenciais_os_conceitos_os_principios_e_as_teorias_relacionadas_a_ciencia_da_computacao_para_o_desenvolvimento_de_software_e_hardware_e_suas_aplicacoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.11_Escolher_e_aplicar_boas_praticas_e_tecnicas_que_conduzem_ao_raciocinio_rigoroso_no_planejamento_na_execucao_e_no_acompanhamento_na_meiacao_e_gerenciamento_geral_da_qualidade_de_sistemas_computacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.1_Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_de_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.11-Aplicar_os_principios_de_gerencia_organizacao_e_recuperacao_da_informacao_de_varios_tipos_incluindo_texto_imagem_som_e_video"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.1-Gerir_a_sua_propria_aprendizagem_e_desenvolvimento_incluindo_a_gestao_de_tempo_e_competencias_organizacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.3-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentesii"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#OWLNamedIndividual_f7b8393d_47b1_4c7b_ba79_f761a387155a"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:altLabel xml:lang="en">Inter-Process Communication</skos:altLabel>
+        <skos:definition xml:lang="pt">A Comunicação entre Processos em sistemas operacionais refere-se aos mecanismos que permitem a troca de informações e dados entre processos em execução. Isso possibilita a cooperação e coordenação entre os programas, permitindo que eles compartilhem informações, sincronizem suas ações e realizem tarefas em conjunto  (ChatGPT).</skos:definition>
+        <skos:definition xml:lang="en">In the context of operating systems, &quot;Comunicação entre Processos&quot; translates to &quot;Inter-Process Communication (IPC).&quot; It refers to the mechanisms and systems that enable processes in execution to exchange information and data with each other. This allows for cooperation and coordination among programs, enabling them to share information, synchronize their actions, and perform tasks together  (ChatGPT).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Comunicação entre Processos</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#Process -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#Process"/>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#Processos -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#Processos">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.5-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.6-Compreender_os_fatos_essenciais_os_conceitos_os_principios_e_as_teorias_relacionadas_a_ciencia_da_computacao_para_o_desenvolvimento_de_software_e_hardware_e_suas_aplicacoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.1-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.11_Escolher_e_aplicar_boas_praticas_e_tecnicas_que_conduzem_ao_raciocinio_rigoroso_no_planejamento_na_execucao_e_no_acompanhamento_na_meiacao_e_gerenciamento_geral_da_qualidade_de_sistemas_computacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.7-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.1_Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_de_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.4-Avaliar_criticamente_projetos_de_sistemas_de_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.1-Identificar_problemas_que_tenham_solucao_algoritmica"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.3-Tomar_decisoes_e_inovar_com_base_no_conhecimento_do_funcionamento_e_das_caracteristicas_tecnicas_de_hardware_e_da_infraestrutura_do_software_dos_sistemas_de_computacao_consciente_dos_aspectos_eticos_legais_e_dos_impactos_ambientais_decorrentesii"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.6-Identificar_e_analisar_requisitos_e_especificacoes_para_problemas_especificos_e_planejar_estrategias_para_suas_solucoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.1.7-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.4-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema%20"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.8-Aplicar_temas_e_principios_recorrentes_como_abstracao_complexidade_principio_de_localidade_de_referencia_(caching)_compartilhamento_de_recursos_seguranca_concorrencia_evolucao_de_sistemas_entre_outros_e_reconhecer_que_esses_temas_e_principios_sao_fundamentais_a_area_de_ciencia_da_computacao"/>
+        <skos:altLabel xml:lang="en">Process</skos:altLabel>
+        <skos:definition> A stream of activity. A process is defined by its code, i.e. the ordered set of machine instructions defining the actions that the process is to take, the contents of its resources  (Oxford Dictionary).</skos:definition>
+        <skos:definition xml:lang="pt">Uma sequência de atividade. Um processo é definido pelo seu código, ou seja, pelo conjunto ordenado de instruções de máquina que define as ações que o processo deve executar, bem como o conteúdo de seus recursos (Oxford Dictionary).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Processo</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#Sincronização -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#Sincronização">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.1-Resolver_problemas_usando_ambientes_de_programacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.3-Avaliar_criticamente_projetos_de_sistemas_de_computacao"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.7-Reconhecer_a_importancia_do_pensamento_computacional_no_cotidiano_e_sua_aplicacao_em_circunstancias_apropriadas_e_em_dominios_diversos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.8-Empregar_metodologias_que_visem_garantir_criterios_de_qualidade_ao_longo_de_todas_as_etapas_de_desenvolvimento_de_uma_solucao_computacional"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.7.6-Identificar_e_analisar_requisitos_e_especificacoes_para_problemas_especificos_e_planejar_estrategias_para_suas_solucoes"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.3-Preparar_e_apresentar_trabalhos_e_problemas_tecnicos_e_suas_solucoes_para_audiencias_diversas_em_formatos_apropriados_(oral_e_escrito)"/>
+        <skos:altLabel xml:lang="en">Synchronization</skos:altLabel>
+        <skos:definition xml:lang="en">A relationship between *processes such that one process cannot proceed beyond a particular point until another process has reached a particular point. For example, when one process is writing data in a buffer to be read by another process, the two processes must be synchronized so that the reading process does not attempt to read the buffer beyond the point at which the writing process has written data in the buffer  (Oxford Dictionary). </skos:definition>
+        <skos:definition xml:lang="pt">Uma relação entre processos na qual um processo não pode avançar além de um ponto específico até que outro processo tenha atingido um ponto particular. Por exemplo, quando um processo está escrevendo dados em um buffer para serem lidos por outro processo, os dois processos devem estar sincronizados para que o processo de leitura não tente ler o buffer além do ponto em que o processo de escrita já escreveu dados no buffer  (Oxford Dictionary).</skos:definition>
+        <skos:prefLabel xml:lang="pt">Sincronização</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.unicentro.br/2017/DiretrizesSBC#Threads -->
+
+    <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#Threads">
+        <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.6-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.4.7-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.5.10-Conceber_solucoes_computacionais_a_partir_de_decisoes_visando_o_equilibrio_de_todos_os_fatores_envolvidos"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.6.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
+        <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#sistemasOperacionais"/>
+        <skos:definition xml:lang="pt-br">Em computação, threads (também conhecidas como threads de execução) são unidades básicas de processamento que permitem que um programa execute tarefas em paralelo. Uma thread pode ser considerada como uma sequência de instruções que podem ser executadas de forma independente, compartilhando recursos como memória e estado de um processo. (ChatGPT)</skos:definition>
+        <skos:definition>In computer science, threads (also known as execution threads) are basic processing units that enable a program to execute tasks in parallel. A thread can be considered as a sequence of instructions that can be executed independently, sharing resources such as memory and the state of a process. (ChatGPT)</skos:definition>
+        <skos:prefLabel xml:lang="pt">Threads</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://lod.unicentro.br/2017/DiretrizesSBC#algebraLinear -->
 
     <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#algebraLinear">
@@ -3553,6 +3835,7 @@ A investigação de propriedades matemáticas dos dados, como números, e de ope
     <owl:NamedIndividual rdf:about="http://lod.unicentro.br/2017/DiretrizesSBC#gerenciaProjeto">
         <rdf:type rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#Conteudo"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:hasTopConcept rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
         <skos:inScheme rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#CC"/>
         <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.2.5-Ser_capaz_de_realizar_trabalho_cooperativo_e_entender_os_beneficios_que_este_pode_produzir"/>
         <skos:related rdf:resource="http://lod.unicentro.br/2017/DiretrizesSBC#C.3.1-Compreender_e_explicar_as_dimensoes_quantitativas_de_um_problema"/>
@@ -4405,7 +4688,7 @@ A Dictionary of Computer Science (Oxford Quick Reference)(p. 545). OUP Oxford. E
         <skos:altLabel xml:lang="en">Operational Systems</skos:altLabel>
         <skos:definition xml:lang="pt">O conjunto de produtos de software que controla conjuntamente os recursos do sistema e os processos que utilizam esses recursos em um sistema de computador. Os principais produtos incluem * Windows, * OS X e * UNIX e os grandes sistemas operacionais de mainframe usados em aplicativos comerciais. A Dictionary of Computer Science (Oxford Quick Reference) (p. 356). OUP Oxford. Kindle Edition.</skos:definition>
         <skos:definition xml:lang="en">The set of software products that jointly controls the system resources and the processes using these resources on a computer system. Major products include *Windows, *OS X, and *UNIX, and the large mainframe operating systems used in commercial applications. A Dictionary of Computer Science (Oxford Quick Reference) (p. 383). OUP Oxford. Kindle Edition</skos:definition>
-        <skos:editorialNote xml:lang="pt">Histórico e evolução. Conceitos básicos. Tipos e estrutura dos sistemas operacionais. Processos e threads. Sincronização e comunicação entre processos. Alocação de recursos e deadlocks. Gerência do processador. Gerência de memória. Sistemas de arquivo. Gerenciamento de entrada e saída. Sistemas operacionais de tempo real. Estudo e atividades práticas. Virtualização.</skos:editorialNote>
+        <skos:editorialNote xml:lang="pt">Conceitos básicos. Processos e threads. Sincronização e comunicação entre processos. Gerência do processador. Gerência de memória. Sistemas de arquivo. Gerenciamento de entrada e saída.</skos:editorialNote>
         <skos:prefLabel xml:lang="pt">Sistemas Operacionais</skos:prefLabel>
     </owl:NamedIndividual>
     
@@ -4964,12 +5247,12 @@ A Dictionary of Computer Science (Oxford Quick Reference)(p. 545). OUP Oxford. E
      -->
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
-        <skos:example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</skos:example>
+        <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <skos:definition xml:lang="en">An alternative lexical label for a resource.</skos:definition>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
-        <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
+        <skos:definition xml:lang="en">An alternative lexical label for a resource.</skos:definition>
+        <skos:example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</skos:example>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -4978,21 +5261,21 @@ A Dictionary of Computer Science (Oxford Quick Reference)(p. 545). OUP Oxford. E
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">notation</rdfs:label>
         <skos:definition xml:lang="en">A notation, also known as classification code, is a string of characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope of a given concept scheme.</skos:definition>
         <skos:scopeNote xml:lang="en">By convention, skos:notation is used with a typed literal in the object position of the triple.</skos:scopeNote>
-        <rdfs:label xml:lang="en">notation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <rdfs:comment xml:lang="en">The range of skos:prefLabel is the class of RDF plain literals.</rdfs:comment>
-        <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
-        <rdfs:label xml:lang="en">preferred label</rdfs:label>
         <rdfs:comment xml:lang="en">A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The range of skos:prefLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <rdfs:label xml:lang="en">preferred label</rdfs:label>
+        <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
